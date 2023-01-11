@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;component&#x2F;storage - Daedalus Dock</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Daedalus Dock</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/component/storage.html#var">Var Details</a> - <a href="datum/component/storage.html#proc">Proc Details</a></header>
+<main>
+<h1>storage <aside>/<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/storage.html">storage</a></aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L5">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 5"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/component/storage.html#var/allow_big_nesting">allow_big_nesting</a></th><td>allow storage objects of the same or greater size.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/allow_quick_empty">allow_quick_empty</a></th><td>allow empty verb which allows dumping on the floor of everything inside quickly.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/allow_quick_gather">allow_quick_gather</a></th><td>allow toggle mob verb which toggles collecting all items from a tile.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/attack_hand_interact">attack_hand_interact</a></th><td>interact on attack hand.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/boxes">boxes</a></th><td>storage display object</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/can_hold">can_hold</a></th><td>if this is set, only items, and their children, will fit</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/can_hold_trait">can_hold_trait</a></th><td>If set can only contain stuff with this single trait present.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/cant_hold">cant_hold</a></th><td>if this is set, items, and their children, won't fit</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/click_gather">click_gather</a></th><td>whether this can be clicked on items to pick it up rather than the other way around.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/closer">closer</a></th><td>close button object</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/display_numerical_stacking">display_numerical_stacking</a></th><td>stack things of the same type and show as a single object with a number.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/exception_hold">exception_hold</a></th><td>if set, these items will be the exception to the max size of object that can fit.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/insert_preposition">insert_preposition</a></th><td>you put things &quot;in&quot; a bag, but &quot;on&quot; a tray.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/is_using">is_using</a></th><td>lazy list of mobs looking at the contents of this storage.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/locked">locked</a></th><td>when locked nothing can see inside or use it.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/master">master</a></th><td>If not null, all actions act on master and this is just an access point.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/max_combined_w_class">max_combined_w_class</a></th><td>max combined sizes of objects that will fit.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/max_items">max_items</a></th><td>max number of objects that will fit.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/max_w_class">max_w_class</a></th><td>max size of objects that will fit.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/quickdraw">quickdraw</a></th><td>altclick interact</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/rustle_sound">rustle_sound</a></th><td>play rustle sound on interact.</td></tr>
+            <tr><th><a href="datum/component/storage.html#var/silent">silent</a></th><td>whether this makes a message when things are put in.</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/component/storage.html#proc/async_preattack_intercept">async_preattack_intercept</a></th><td>async functionality from preattack_intercept</td></tr>
+            <tr><th><a href="datum/component/storage.html#proc/attempt_put_in_hands">attempt_put_in_hands</a></th><td>attempt to put an item from contents into the users hands</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/allow_big_nesting"><aside class="declaration">var </aside>allow_big_nesting
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L61">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 61"/></a></h3>
+        <p>allow storage objects of the same or greater size.</p><h3 id="var/allow_quick_empty"><aside class="declaration">var </aside>allow_quick_empty
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L43">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 43"/></a></h3>
+        <p>allow empty verb which allows dumping on the floor of everything inside quickly.</p><h3 id="var/allow_quick_gather"><aside class="declaration">var </aside>allow_quick_gather
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L45">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 45"/></a></h3>
+        <p>allow toggle mob verb which toggles collecting all items from a tile.</p><h3 id="var/attack_hand_interact"><aside class="declaration">var </aside>attack_hand_interact
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L64">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 64"/></a></h3>
+        <p>interact on attack hand.</p><h3 id="var/boxes"><aside class="declaration">var </aside>boxes
+            <aside>&ndash; /<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/<a href="atom/movable/screen.html">screen</a>/storage</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L56">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 56"/></a></h3>
+        <p>storage display object</p><h3 id="var/can_hold"><aside class="declaration">var </aside>can_hold
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L11">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 11"/></a></h3>
+        <p>if this is set, only items, and their children, will fit</p><h3 id="var/can_hold_trait"><aside class="declaration">var </aside>can_hold_trait
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L17">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 17"/></a></h3>
+        <p>If set can only contain stuff with this single trait present.</p><h3 id="var/cant_hold"><aside class="declaration">var </aside>cant_hold
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L13">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 13"/></a></h3>
+        <p>if this is set, items, and their children, won't fit</p><h3 id="var/click_gather"><aside class="declaration">var </aside>click_gather
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L39">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 39"/></a></h3>
+        <p>whether this can be clicked on items to pick it up rather than the other way around.</p><h3 id="var/closer"><aside class="declaration">var </aside>closer
+            <aside>&ndash; /<a href="atom.html">atom</a>/<a href="atom/movable.html">movable</a>/<a href="atom/movable/screen.html">screen</a>/close</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L58">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 58"/></a></h3>
+        <p>close button object</p><h3 id="var/display_numerical_stacking"><aside class="declaration">var </aside>display_numerical_stacking
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L53">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 53"/></a></h3>
+        <p>stack things of the same type and show as a single object with a number.</p><h3 id="var/exception_hold"><aside class="declaration">var </aside>exception_hold
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L15">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 15"/></a></h3>
+        <p>if set, these items will be the exception to the max size of object that can fit.</p><h3 id="var/insert_preposition"><aside class="declaration">var </aside>insert_preposition
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L50">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 50"/></a></h3>
+        <p>you put things &quot;in&quot; a bag, but &quot;on&quot; a tray.</p><h3 id="var/is_using"><aside class="declaration">var </aside>is_using
+            <aside>&ndash; /list/mob</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L22">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 22"/></a></h3>
+        <p>lazy list of mobs looking at the contents of this storage.</p><h3 id="var/locked"><aside class="declaration">var </aside>locked
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L25">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 25"/></a></h3>
+        <p>when locked nothing can see inside or use it.</p><h3 id="var/master"><aside class="declaration">var </aside>master
+            <aside>&ndash; /<a href="datum.html">datum</a>/<a href="datum/component.html">component</a>/<a href="datum/component/storage.html">storage</a>/concrete</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L8">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 8"/></a></h3>
+        <p>If not null, all actions act on master and this is just an access point.</p><h3 id="var/max_combined_w_class"><aside class="declaration">var </aside>max_combined_w_class
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L30">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 30"/></a></h3>
+        <p>max combined sizes of objects that will fit.</p><h3 id="var/max_items"><aside class="declaration">var </aside>max_items
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L32">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 32"/></a></h3>
+        <p>max number of objects that will fit.</p><h3 id="var/max_w_class"><aside class="declaration">var </aside>max_w_class
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L28">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 28"/></a></h3>
+        <p>max size of objects that will fit.</p><h3 id="var/quickdraw"><aside class="declaration">var </aside>quickdraw
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L66">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 66"/></a></h3>
+        <p>altclick interact</p><h3 id="var/rustle_sound"><aside class="declaration">var </aside>rustle_sound
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L41">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 41"/></a></h3>
+        <p>play rustle sound on interact.</p><h3 id="var/silent"><aside class="declaration">var </aside>silent
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L37">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 37"/></a></h3>
+        <p>whether this makes a message when things are put in.</p><h2 id="proc">Proc Details</h2><h3 id="proc/async_preattack_intercept"><aside class="declaration">proc </aside>async_preattack_intercept<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/attack_item, /<a href="mob.html">mob</a>/pre_attack_mob) 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L258">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 258"/></a></aside>
+        </h3>
+        <p>async functionality from preattack_intercept</p><h3 id="proc/attempt_put_in_hands"><aside class="declaration">proc </aside>attempt_put_in_hands<aside>(/<a href="obj.html">obj</a>/<a href="obj/item.html">item</a>/to_remove, /<a href="mob.html">mob</a>/user) 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/code/datums/components/storage/storage.dm#L934">
+        <img src="git.png" width="16" height="16" title="code&#x2F;datums&#x2F;components&#x2F;storage&#x2F;storage.dm 934"/></a></aside>
+        </h3>
+        <p>attempt to put an item from contents into the users hands</p></main>
+<footer>
+    daedalus.dme
+    <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/tree/4fae73681e321b6c3287d46f9bbdef4563c36507">4fae736</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>

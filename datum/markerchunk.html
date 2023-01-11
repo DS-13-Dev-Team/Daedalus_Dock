@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;markerchunk - Daedalus Dock</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Daedalus Dock</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/markerchunk.html#var">Var Details</a> - <a href="datum/markerchunk.html#proc">Proc Details</a></header>
+<main>
+<h1>markerchunk <aside>/<a href="datum.html">datum</a>/<a href="datum/markerchunk.html">markerchunk</a></aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L8">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 8"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/active_masks">active_masks</a></th><td>List of active images, i.e list of masks for visible turfs</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/queued_for_update">queued_for_update</a></th><td>Lazy list, In update() things in it will reculculate what turfs they can see</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/rangeVisionSources">rangeVisionSources</a></th><td>Vision sources that don't update in hasChanged</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/seenby">seenby</a></th><td>Camera mobs that can see turfs in our chunk</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/turfs">turfs</a></th><td>List of all turfs = image that masks static</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/viewVisionSources">viewVisionSources</a></th><td>Vision sources that update in hasChanged</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/visibleTurfs">visibleTurfs</a></th><td>Visible turfs in this chunk</td></tr>
+            <tr><th><a href="datum/markerchunk.html#var/visionSources">visionSources</a></th><td>Assoc list of the form: list(source = list(turfs source can see in this chunk))
+Contains all vision sources</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/markerchunk.html#proc/New">New</a></th><td>Create a new camera chunk, since the chunks are made as they are needed.</td></tr>
+            <tr><th><a href="datum/markerchunk.html#proc/add">add</a></th><td>Add a Marker eye to the chunk</td></tr>
+            <tr><th><a href="datum/markerchunk.html#proc/remove">remove</a></th><td>Remove a Marker eye from the chunk</td></tr>
+            <tr><th><a href="datum/markerchunk.html#proc/update">update</a></th><td>The actual updating. It only updates vision sources in var/list/queued_for_update</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/active_masks"><aside class="declaration">var </aside>active_masks
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L21">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 21"/></a></h3>
+        <p>List of active images, i.e list of masks for visible turfs</p><h3 id="var/queued_for_update"><aside class="declaration">var </aside>queued_for_update
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L25">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 25"/></a></h3>
+        <p>Lazy list, In update() things in it will reculculate what turfs they can see</p><h3 id="var/rangeVisionSources"><aside class="declaration">var </aside>rangeVisionSources
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L15">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 15"/></a></h3>
+        <p>Vision sources that don't update in hasChanged</p><h3 id="var/seenby"><aside class="declaration">var </aside>seenby
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L23">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 23"/></a></h3>
+        <p>Camera mobs that can see turfs in our chunk</p><h3 id="var/turfs"><aside class="declaration">var </aside>turfs
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L19">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 19"/></a></h3>
+        <p>List of all turfs = image that masks static</p><h3 id="var/viewVisionSources"><aside class="declaration">var </aside>viewVisionSources
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L17">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 17"/></a></h3>
+        <p>Vision sources that update in hasChanged</p><h3 id="var/visibleTurfs"><aside class="declaration">var </aside>visibleTurfs
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L10">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 10"/></a></h3>
+        <p>Visible turfs in this chunk</p><h3 id="var/visionSources"><aside class="declaration">var </aside>visionSources
+            <aside>&ndash; /list</aside>
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L13">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 13"/></a></h3>
+        <p>Assoc list of the form: list(source = list(turfs source can see in this chunk))
+Contains all vision sources</p><h2 id="proc">Proc Details</h2><h3 id="proc/New">New<aside>(x, y, z, /list/netVisionSources, /image/example) 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L32">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 32"/></a></aside>
+        </h3>
+        <p>Create a new camera chunk, since the chunks are made as they are needed.</p><h3 id="proc/add"><aside class="declaration">proc </aside>add<aside>(/<a href="mob.html">mob</a>/camera/marker_signal/eye) 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L79">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 79"/></a></aside>
+        </h3>
+        <p>Add a Marker eye to the chunk</p><h3 id="proc/remove"><aside class="declaration">proc </aside>remove<aside>(/<a href="mob.html">mob</a>/camera/marker_signal/eye) 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L88">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 88"/></a></aside>
+        </h3>
+        <p>Remove a Marker eye from the chunk</p><h3 id="proc/update"><aside class="declaration">proc </aside>update<aside>() 
+        
+    
+            <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/blob/4fae73681e321b6c3287d46f9bbdef4563c36507/necromorphs/code/marker/markernet/marker_chunk.dm#L103">
+        <img src="git.png" width="16" height="16" title="necromorphs&#x2F;code&#x2F;marker&#x2F;markernet&#x2F;marker_chunk.dm 103"/></a></aside>
+        </h3>
+        <p>The actual updating. It only updates vision sources in var/list/queued_for_update</p></main>
+<footer>
+    daedalus.dme
+    <a href="https://github.com/DS-13-Dev-Team/Daedalus_Dock/tree/4fae73681e321b6c3287d46f9bbdef4563c36507">4fae736</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
+</body>
+</html>
